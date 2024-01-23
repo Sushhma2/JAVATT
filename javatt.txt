@@ -1,0 +1,54 @@
+//generate 4 digit random number
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println(Math.round(Math.random()*10000));
+	}
+}
+//solve x=a^b+sin(b^a)
+public class Main
+{
+	public static void main(String[] args) {
+	    double a=5,b=3;
+		System.out.println(Math.sqrt(Math.pow(a,b)+Math.sin(Math.pow(b,a))));
+	}
+}
+//solve x=loga+e^a+cos(cuberoot(a))/log10b+tanb+a^b
+public class Main
+{
+	public static void main(String[] args) {
+	    double a=5,b=3;
+		System.out.println((Math.log(a)+Math.exp(a)+Math.cos(Math.cbrt(a)))/(Math.log10(b)+Math.tan(b)+Math.pow(a,b)));
+	}
+}
+
+//find a^b if a>b else find b^a (use only math method)
+public class Main
+{
+	public static void main(String[] args) {
+	    double a=5,b=8;
+		System.out.println(Math.pow(Math.max(a,b),Math.min(a,b)));
+	
+	}
+}
+
+*******************************************************************************/
+//absolute and difference
+import java.util.Scanner;
+public class Main
+{
+   static int diff21(int n)
+    {
+         int x;
+         x=(n<21)?(Math.abs(n-21)):(2*(Math.abs(n-21)));
+         return x;
+    }
+	public static void main(String[] args) {
+	   Scanner s=new Scanner(System.in);
+	   int a,b;
+	   a=s.nextInt();
+	   b=diff21(a);
+	   System.out.println(b);
+	
+	}
+}
